@@ -4,7 +4,6 @@ body {
     position: relative; 
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
     Meiryo, "ＭＳ Ｐゴシック", sans-serif;
-    background-image: url("/images/background.jpeg");
     background-size: cover;
 }
 
@@ -80,13 +79,16 @@ body {
 }
 
 #down_message1{
-    background-color: red; 
+    background-color: rgb(245, 137, 137); 
+    cursor: pointer;
 }
 
 #down_message2{
-    background-color: green; 
+    background-color: rgb(158, 251, 158); 
+    cursor: pointer;
 }
 
 #down_message3{
-    background-color: blue; 
+    background-color: rgb(87, 87, 193); 
+    cursor: pointer;
 }
