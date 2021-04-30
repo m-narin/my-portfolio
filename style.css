@@ -1,0 +1,96 @@
+/* 全体 */
+body {
+    min-height: 100vh;
+    position: relative; 
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+    background-image: url("/images/background.jpeg");
+    background-size: cover;
+}
+
+/* top */
+.top{
+    background-image: url("/images/back.gif");
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_ds{
+    background-image: url("/images/ds.png");
+    height: 800px;
+    width: 800px;
+    background-size: cover;
+
+    animation: fadeIn 7s ease 0.3s 1 normal;
+}
+
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+
+    0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+
+    100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+
+}
+
+.ds_up{
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top_message{
+    margin-top: 5%;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.top_kirby{
+    margin-top: 3%;
+    animation: animation01 0.4s infinite ease-out 0.8s both;
+    animation-direction: alternate;
+}
+
+@keyframes animation01 {
+    from {
+    transform: translate(0,0);
+    }
+    to {
+    transform: translate(0px,-10px);
+    }
+}
+
+.ds_down{
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ds_down_up{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    margin-bottom: 50px;
+}
+
+#down_message1{
+    background-color: red; 
+}
+
+#down_message2{
+    background-color: green; 
+}
+
+#down_message3{
+    background-color: blue; 
+}
