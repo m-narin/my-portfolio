@@ -11,7 +11,7 @@ body {
 /* top */
 .top{
     background-image: url("/images/back.gif");
-    height: 1000px;
+    height: 900px;
     width: 100%;
     background-size: cover;
 
@@ -26,7 +26,7 @@ body {
     width: 800px;
     background-size: cover;
 
-    animation: fadeIn 7s ease 0.3s 1 normal;
+    animation: fadeIn 4s ease 0.3s 1 normal;
 }
 
 @keyframes fadeIn { /*animetion-nameで設定した値を書く*/
@@ -45,7 +45,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.top_message{
+
+#top_message{
     margin-top: 5%;
 
     font-size: 20px;
@@ -68,19 +69,14 @@ body {
 }
 
 .ds_down{
-    height: 50%;
+    height: 45%;
+    width: 40%;
+    margin: 0 auto;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.ds_down_up{
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    width: 35%;
-    margin-bottom: 50px;
+    align-items: center;
 }
 
 #down_message1{
